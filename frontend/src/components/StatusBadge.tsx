@@ -1,0 +1,1 @@
+export default function StatusBadge({status}:{status:string}) { const key=status.toLowerCase().replaceAll('_',' '); return <span className={`badge badge-${key.replaceAll(' ','-')}`}><i aria-hidden="true" />{key}</span> }

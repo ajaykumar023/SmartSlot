@@ -1,0 +1,10 @@
+.tomtom-map {position:relative;width:100%;height:380px;overflow:hidden;border-radius:14px;background:#e5e7eb;border:1px solid #d9dfe4}
+.tomtom-map svg {display:block;}
+.tomtom-map-controls {position:absolute;top:14px;right:14px;display:flex;flex-direction:column;background:white;border:1px solid #d8dfe4;border-radius:10px;box-shadow:0 4px 14px #0f172a22;overflow:hidden;}
+.tomtom-map-controls button {height:37px;width:39px;display:flex;align-items:center;justify-content:center;border:0;background:white;color:#243447;cursor:pointer}
+.tomtom-map-controls button+button {border-top:1px solid #e1e6ea}
+.tomtom-map-controls button:hover {background:#f4f6f9}
+.tomtom-map-legend {position:absolute;left:13px;bottom:13px;background:#fffffff2;box-shadow:0 2px 10px #0f172a12;border:1px solid #e2e8ef;border-radius:8px;padding:8px 10px;font-size:12px;color:#253349;display:flex;align-items:center;gap:7px}
+.tomtom-dot {display:inline-block;width:9px;height:9px;border-radius:50%}.tomtom-dot-user {background:#2c66e7}.tomtom-dot-branch {background:#1f9a74;margin-left:10px}
+.tomtom-map-attribution {position:absolute;right:12px;bottom:11px;background:#fffc;padding:3px 5px;border-radius:4px;font-size:10px}
+.tomtom-map-attribution a {color:#29394b;text-decoration:none}

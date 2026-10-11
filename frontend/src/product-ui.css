@@ -1,0 +1,121 @@
+/* SmartSlot product UI refresh – intentional quiet visual hierarchy. */
+:root {color:#23332f; background:#f7f8f6; font-family: 'DM Sans',system-ui,-apple-system,sans-serif; --ink:#1c302a; --quiet:#6b7973; --border:#e5eae6; --accent:#176858}
+body {background:#f7f8f6;color:var(--ink);font-size:14px}
+.shell{background:#f7f8f6}
+.sidebar{width:236px;background:#ffffff;border-right:1px solid #e9eeeb;padding:24px 13px 18px}
+.sidebar .brand{padding:4px 12px 26px;color:var(--ink);font:800 20px 'Manrope',sans-serif;letter-spacing:-.9px}
+.brand-mark{background:#176858;color:#fff;border-radius:10px;box-shadow:none;font-family:'Manrope',sans-serif;font-weight:800;font-size:17px;width:33px;height:33px}
+.nav-label{padding:14px 13px 9px;color:#9aa5a0;letter-spacing:1.2px;font-size:10px}
+.sidebar .nav-link{border-radius:9px;color:#5b6a64;font-weight:550;font-size:13px;padding:10px 12px;gap:12px;margin:1px 0;transition:background .12s ease,color .12s ease}
+.sidebar .nav-link svg{color:#82918a;width:17px;height:17px;stroke-width:1.8}
+.sidebar .nav-link:hover{color:#1c5347;background:#f2f7f4}
+.sidebar .nav-link.active{color:#176858;background:#eaf3ef;font-weight:700}
+.sidebar .nav-link.active svg{color:#176858}
+.side-bottom{border-top:1px solid #eef2ef}.avatar{background:#e3efe9;color:#176858;font-size:12px}
+.main{margin-left:236px}.topbar{height:69px;background:#fff;border-bottom:1px solid #e9eeeb;padding:0 37px}.crumb{display:flex;align-items:center;gap:8px;color:#6b7871;font-size:12px}
+.top-actions{gap:9px}.top-actions .button{white-space:nowrap}
+.main-inner{max-width:1280px;padding:37px 38px 70px}
+.page-title{font-family:'Manrope',sans-serif;color:#23332f;font-weight:750;font-size:27px;letter-spacing:-1px;line-height:1.25;margin-bottom:8px}
+.page-subtitle{color:#718078;font-size:13px;line-height:1.7;margin:0 0 25px}
+.panel{border:1px solid var(--border);background:#fff;border-radius:13px;box-shadow:none;margin-bottom:16px;padding:22px}
+.panel-head{margin-bottom:16px}.panel h2{font-family:'Manrope',sans-serif;font-size:14px;letter-spacing:-.25px;color:#23332f}
+.stat{padding:20px 23px}.stat-value{color:#213930;font-family:'Manrope',sans-serif}.stat-label{font-size:12px;color:#697970}
+.button{background:#176858;color:white;box-shadow:none;border-radius:9px;font-weight:650;font-size:12px;padding:11px 17px;transition:background .15s,border-color .15s,transform .15s}
+.button:hover{background:#0f5143;transform:none}
+.button.secondary{background:#eaf3ef;color:#176858}
+.button.secondary:hover{background:#deebe4}
+.button.ghost{background:#fff;border:1px solid #e1e8e3;color:#3d554a}
+.button.ghost:hover{background:#f5f8f5;border-color:#cad8d0}
+.button.danger{background:#fff2f1;color:#ac5145}
+.button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible{outline:2px solid #80aa98;outline-offset:2px}
+.field label{color:#566860;font-size:12px;font-weight:650}.field input,.field select{border:1px solid #dee6e0;border-radius:8px;padding:12px 13px;font-size:13px;color:#1e342b}
+.slot{border:1px solid #e5ebe5;border-radius:10px;background:#fff;padding:14px 15px;margin:8px 0;gap:10px;transition:background .15s,border-color .15s}
+.slot:hover{background:#fafcfb}.slot.selected{border-color:#85b4a2;background:#f2f8f4}
+.service-icon{background:#eaf2ed;color:#176858;border-radius:10px}
+.badge-confirmed,.badge-accepted{background:#e9f4ec;color:#23764e}.badge-checked-in{background:#e7f2f1;color:#147466}.badge-at-risk,.badge-pending,.badge-offered{background:#fdf2dc;color:#9e6e24}
+.notice{border-left:3px solid #83bba2;background:#f3f8f4;color:#506d5b;border-radius:8px;font-size:12px}
+.success-box{background:#eaf5ed;color:#2c704a}.error-box{background:#fff0ed;color:#a7433e}
+th{color:#819088;font-size:10px}td{color:#4d5d55;font-size:12px;border-bottom-color:#eef1ed}
+.empty-icon{background:#eaf3ee;color:#176858}.chart-bar{background:linear-gradient(0deg,#176858,#7dbca0)}
+.welcome{background:#183d32;border-radius:15px}.welcome:after{opacity:.35}.welcome p{color:#c7e0d5}
+.geo-result>div{background:#f4f8f5;border-radius:9px}
+.geo-rule span{background:#eaf3ed;color:#176858}
+.tabs .tab.active,.tab.active{background:#eaf3ed;color:#176858;border-color:#cfe3d8}
+.detail-kicker,.eyebrow{font-size:10px;font-weight:800;letter-spacing:1.35px;color:#598071;text-transform:uppercase}
+/* Customer visit passes */
+.customer-passes-page{max-width:950px}.page-heading{display:flex;align-items:flex-start;justify-content:space-between}
+.pass-list{display:grid;gap:13px}
+.booking-pass-row{background:#fff;border:1px solid #e2e9e4;border-radius:13px;padding:20px 22px;display:flex;align-items:center;gap:23px}
+.booking-date{flex:none;display:flex;flex-direction:column;align-items:center;justify-content:center;border-radius:10px;border:1px solid #e5ebe6;background:#f6faf7;width:77px;height:88px;gap:2px;color:#678377;font-size:11px;text-transform:uppercase}
+.booking-date strong{font:800 27px 'Manrope',sans-serif;color:#28473b;line-height:1.2}
+.booking-main{flex:1;min-width:0}.booking-main h2{font:750 17px 'Manrope',sans-serif;letter-spacing:-.4px;margin:5px 0 5px}.booking-main p{font-size:13px;color:#61736a;margin:0 0 10px}.booking-ref{font-size:11px;color:#8a9a92;letter-spacing:.3px}
+.pass-explainer{display:flex;align-items:center;gap:10px;color:#718078;font-size:12px;margin:23px 2px;line-height:1.6}.pass-explainer svg{flex:none;color:#628b77}
+/* Premium, readable QR sheet */
+.modal.pass-sheet{width:min(510px,100%);max-height:calc(100vh - 36px);overflow-y:auto;padding:29px 33px;border-radius:17px}
+.pass-sheet h2{font:750 23px 'Manrope',sans-serif;color:#24382d;letter-spacing:-.8px;margin:9px 0 4px}.pass-subtitle{color:#809087;font-size:12px;margin:0 0 21px}
+.pass-summary{border:1px solid #e5ece7;border-radius:11px;padding:16px 18px;display:grid;grid-template-columns:1fr 1fr;gap:17px;background:#fbfcfb}
+.pass-summary>div{display:flex;flex-direction:column;gap:5px;min-width:0}.pass-summary span{font-size:10px;color:#8a968f}.pass-summary strong{font-size:12px;color:#263b31;line-height:1.5;font-weight:700}.mono-ref{font-family:ui-monospace,SFMono-Regular,Consolas,monospace;letter-spacing:.6px}
+.pass-state{display:flex;align-items:center;flex-direction:column;text-align:center;gap:11px;padding:30px 20px 15px}
+.pass-state>svg{color:#176858;background:#eaf3ed;padding:9px;width:50px;height:50px;border-radius:13px}.pass-state strong{font-family:'Manrope',sans-serif;font-size:15px;color:#2d4639}.pass-state>span{font-size:12px;color:#7a887e;line-height:1.65;max-width:340px}.pass-state .button{margin-top:7px}
+.pass-visual{display:flex;flex-direction:column;align-items:center;gap:10px;padding:22px 10px 10px;text-align:center}.pass-ready-label{display:flex;align-items:center;gap:8px;font-size:12px;color:#176858;font-weight:700}.demo-label{color:#946a27}
+.pass-real-qr{display:block;margin:10px auto;border:8px solid white;border-radius:8px;width:232px;box-shadow:0 0 0 1px #ecf0ec;height:auto}
+.demo-qr-wrap{position:relative;margin:10px auto;width:224px;height:224px;border:7px solid #fff;box-shadow:0 0 0 1px #e1e8e2;border-radius:8px;overflow:hidden}.mock-qr{display:block;width:100%;height:100%;opacity:.52}
+.demo-qr-stamp{position:absolute;inset:66px 14px auto;padding:10px 5px;background:rgba(255,255,255,.97);border:1px dashed #bea778;color:#805a20;border-radius:5px;font-size:16px;font-weight:850;letter-spacing:.5px;box-shadow:0 0 0 4px rgba(255,255,255,.8)}.demo-qr-stamp span{display:block;font-size:10px;font-weight:600;letter-spacing:0;margin-top:3px}
+.pass-sheet-footer{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:17px;padding-top:14px;border-top:1px solid #eef1ee;color:#8b9990;font-size:10px;line-height:1.5}
+/* Booking confirmation */
+.confirmation-page{max-width:510px;margin:10px auto;text-align:center}.confirmation-check{height:52px;width:52px;border-radius:50%;background:#e4f3ea;color:#1c8159;display:grid;place-items:center;margin:0 auto 15px}.confirmation-page .page-title{margin:10px 0}.confirmation-page .page-subtitle{max-width:420px;margin:0 auto 26px}
+.confirmation-ticket{text-align:left;background:white;border:1px solid #e3eae4;border-radius:14px;overflow:hidden}
+.ticket-line{display:flex;justify-content:space-between;gap:12px;padding:15px 20px;border-bottom:1px solid #e9eee9;color:#819087;font-size:11px}.ticket-line strong{color:#425a4c;font-size:12px}
+.ticket-main{padding:23px 20px}.ticket-main h2{font:750 20px 'Manrope',sans-serif;margin:7px 0 13px}.ticket-main p{font-size:13px;color:#6b7d70;margin:8px 0}
+.ticket-footer{display:flex;align-items:flex-start;gap:12px;background:#f2f8f4;padding:18px 20px;border-top:1px solid #e4ebe5;color:#176858}.ticket-footer svg{flex:none;margin-top:2px}.ticket-footer strong{display:block;color:#28513d;font-size:12px;margin-bottom:5px}.ticket-footer span{display:block;color:#687b70;font-size:11px;line-height:1.6}
+.confirmation-actions{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:20px}
+@media(max-width:1050px){.sidebar{width:212px}.main{margin-left:212px}.main-inner{padding:28px 24px}.topbar{padding:0 24px}}
+@media(max-width:760px){.sidebar{width:248px}.main{margin-left:0}.main-inner{padding:23px 16px}.topbar{padding:0 16px}.top-actions{gap:5px}.top-actions .button{font-size:11px}.booking-pass-row{padding:16px;gap:14px;flex-wrap:wrap}.booking-main{flex:1 1 calc(100% - 115px)}.booking-pass-row>.button{width:100%}.modal.pass-sheet{padding:22px 18px}.pass-summary{gap:13px;padding:14px}.pass-sheet-footer{align-items:flex-start}}
+@media(max-width:440px){.top-actions .button:nth-last-child(2){display:none}.pass-summary{grid-template-columns:1fr 1fr}.confirmation-actions .button{width:100%}}
+/* Reception overview: operational rather than dashboard decoration */
+.overview-heading{display:flex;align-items:flex-start;justify-content:space-between;gap:16px;margin-bottom:8px}
+.overview-metrics{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin:17px 0 20px}
+.overview-metric{border:1px solid #e1e9e3;border-radius:12px;background:#fff;padding:20px 21px}
+.overview-metric-top{display:flex;align-items:center;justify-content:space-between;gap:5px;color:#7a8981;font-size:12px}
+.overview-metric-top svg{color:#88a094;stroke-width:1.7}
+.overview-metric>strong{display:block;font:750 29px 'Manrope',sans-serif;letter-spacing:-1px;color:#203a2e;margin-top:14px}
+.overview-content{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(280px,1fr);gap:18px;align-items:start}
+.overview-section-head{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin-bottom:16px}
+.overview-section-head h2{margin:0 0 4px;font:750 15px 'Manrope',sans-serif}
+.overview-section-head p{margin:0;color:#94a19a;font-size:11px}
+.text-link{display:inline-flex;align-items:center;gap:6px;color:#176858;font-size:12px;font-weight:700;white-space:nowrap}
+.overview-booking{display:flex;align-items:center;gap:12px;padding:13px 0;border-bottom:1px solid #edf0ed}
+.overview-booking:last-child{border-bottom:0}
+.overview-booking-icon{background:#eff5f1;color:#538975;width:35px;height:35px;border-radius:9px;display:grid;place-items:center;flex:none}
+.overview-booking-copy{display:flex;flex-direction:column;gap:5px;min-width:0;flex:1}
+.overview-booking-copy strong{font-size:12px;color:#2d3e34}
+.overview-booking-copy span{font-size:11px;color:#91a099;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.overview-action{display:flex;align-items:center;gap:12px;padding:14px 0;border-bottom:1px solid #edf1ee}
+.overview-action:last-child{border-bottom:0}.overview-action:hover strong{color:#176858}
+.overview-action-icon{display:grid;place-items:center;width:37px;height:37px;border-radius:9px;background:#edf5f0;color:#377961;flex:none}
+.overview-action>span:nth-child(2){flex:1}.overview-action strong{display:block;font-size:12px;color:#344c3e;margin-bottom:5px}.overview-action small{display:block;font-size:11px;color:#96a29b}.overview-action>svg{color:#a6b3a9}
+.overview-help{border:1px solid #cfe6d8;display:flex;align-items:flex-start;gap:12px;border-radius:12px;padding:19px;background:#eaf5ee;color:#276247}.overview-help>svg{flex:none}.overview-help strong{font-size:12px}.overview-help p{font-size:11px;line-height:1.6;margin:7px 0 0;color:#688675}
+.overview-bars{display:flex;gap:14px;height:166px;align-items:stretch;padding:5px 3px 0}
+.overview-bar-column{flex:1;display:flex;flex-direction:column;align-items:center;gap:6px;min-width:0}.overview-bar-column strong{color:#698274;font-size:10px}.overview-bar-column small{font-size:10px;color:#9aaba1}
+.overview-bar-track{flex:1;max-width:36px;width:100%;display:flex;align-items:end;border-radius:5px;background:#f1f5f1;overflow:hidden}.overview-bar-track span{background:#53977b;border-radius:5px 5px 0 0;width:100%;min-height:3px}
+@media(max-width:1070px){.overview-metrics{grid-template-columns:repeat(2,minmax(0,1fr))}.overview-content{grid-template-columns:1fr}.overview-right{display:grid;grid-template-columns:1fr 1fr;gap:14px}}
+@media(max-width:700px){.overview-right{grid-template-columns:1fr}.overview-heading{flex-wrap:wrap}.overview-metric{padding:15px}.overview-metric>strong{font-size:26px}}
+/* Workspace launcher */
+.workspace-entry{min-height:100vh;background:#f7f8f6}.workspace-entry-top{height:74px;border-bottom:1px solid #e4eae5;background:#fff;display:flex;align-items:center;justify-content:space-between;padding:0 clamp(20px,5vw,76px)}
+.workspace-entry-top .brand{padding:0}.workspace-entry-top>span{color:#8a998f;font-size:12px}
+.workspace-entry-content{max-width:800px;margin:0 auto;padding:65px 24px 90px}
+.workspace-entry-content h1{font:800 clamp(29px,5vw,37px) 'Manrope',sans-serif;letter-spacing:-1.5px;margin:11px 0 9px;color:#203d31}.workspace-entry-content>p{color:#78877d;margin:0;font-size:14px;line-height:1.7}
+.workspace-chooser{margin-top:33px;background:white;border:1px solid #e1e8e2;border-radius:15px;padding:25px}
+.workspace-section-head{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:18px}.workspace-section-head h2{font:750 14px 'Manrope',sans-serif;margin:0;color:#2f4237}.workspace-section-head span{font-size:11px;color:#9daaa1}
+.workspace-options{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.workspace-option{display:flex;align-items:center;text-align:left;gap:12px;background:#fff;border:1px solid #e4ebe5;border-radius:10px;padding:17px 14px;min-width:0;color:#263c30;transition:background .15s,border-color .15s}
+.workspace-option:hover{background:#f7fbf8;border-color:#afcabb}.workspace-option.selected{border-color:#328469;background:#f1f8f3}
+.workspace-option-icon{width:38px;height:38px;display:grid;place-items:center;flex:none;background:#eef4ef;border-radius:9px;color:#4e8068}
+.workspace-option-text{min-width:0;flex:1}.workspace-option-text strong{display:block;font-size:12px;line-height:1.4}.workspace-option-text small{display:block;font-size:11px;color:#9bab9f;margin-top:5px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.workspace-option-check{width:19px;height:19px;display:grid;place-items:center;border-radius:50%;color:#fff;background:#176858;flex:none}.workspace-option:not(.selected) .workspace-option-check{background:#f4f7f3;border:1px solid #dce5dc}
+.workspace-entry-actions{display:flex;justify-content:flex-end;gap:11px;flex-wrap:wrap;margin-top:21px}.workspace-entry-note{font-size:11px!important;margin-top:24px!important;text-align:center;color:#a1aca4!important}
+/* Unify reception visual language */
+.appointment-stats>div,.reception-metrics>div{border-color:#e1e9e3;box-shadow:none}.appointment-stats strong,.reception-metrics strong{color:#294034}
+.detail-kicker{color:#598071}.detail-field{background:#fbfcfb;border-color:#e5ebe5}.detail-field>strong{color:#264032}.detail-pass-note{background:#f1f8f4;border-color:#d9e9dc;color:#376a51}.detail-pass-note strong{color:#28593e}
+.sidebar{overflow-y:auto}.sidebar .section-label{padding-top:18px}.sidebar>.nav-label:first-of-type{padding-top:0}
+@media(max-width:680px){.workspace-entry-top{padding:0 20px}.workspace-entry-top>span{display:none}.workspace-entry-content{padding:45px 16px}.workspace-chooser{padding:17px}.workspace-options{grid-template-columns:1fr}.workspace-entry-actions{flex-direction:column}.workspace-entry-actions .button{width:100%}}

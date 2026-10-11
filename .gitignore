@@ -1,0 +1,32 @@
+.env
+backend/.env
+backend/.venv/
+frontend/node_modules/
+frontend/.npm-cache/
+frontend/dist/
+__pycache__/
+.pytest_cache/
+*.py[cod]
+
+# Member 4 local-only QR demo secrets
+backend/demo_output/
+
+frontend/.env
+frontend/.env.local
+
+# Local database backups — do not publish
+*.dump
+
+# Local backups and development artifacts
+*.bak
+*.patch
+*.tsbuildinfo
+backend/backup-before-hardening-*/
+
+# Backup files
+*.bak
+*.bak-*
+*.patch
+*.dump
+*.tsbuildinfo
+backend/backup-before-hardening-*/
