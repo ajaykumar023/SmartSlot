@@ -2,7 +2,7 @@
 
 # SmartSlot
 
-**Team Aetherx Member 4 backend extension:** see [MEMBER4-START-HERE.md](MEMBER4-START-HERE.md) for implemented QR, waitlist, queue and testing changes, with a Windows runbook and merge instructions. This branch deliberately does not modify teammate-owned UI pages.
+**backend extension:** see [MEMBER4-START-HERE.md](MEMBER4-START-HERE.md) for implemented QR, waitlist, queue and testing changes, with a Windows runbook and merge instructions. This branch deliberately does not modify teammate-owned UI pages.
 
 **Smart Check-In. Smarter Scheduling.** SmartSlot is an appointment booking and check-in demo for four fictional businesses: a salon, clinic, repair center, and consulting practice. Customers select a business, browse its services, book a qualified professional, receive a QR pass, and review offers. Admins manage appointments and check-in within their signed business access. The Best-Fit Slot Finder is deterministic rule-based scheduling logic.
 
