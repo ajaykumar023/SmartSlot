@@ -100,3 +100,26 @@ Reset the demo data by stopping services, removing the `smartslot_pg` Docker vol
 - PostgreSQL/Docker were unavailable here, so connection readiness, applying the migrations, inserting seed records, and PostgreSQL-backed booking flows remain unverified. Scheduling unit tests use an isolated in-memory SQLite database; the application runtime still requires PostgreSQL.
 
 See [architecture](docs/architecture.md) and [demo script](docs/demo-script.md). API docs are at `/docs` while FastAPI is running.
+## Current Project Overview
+
+SmartSlot is a multi-industry appointment scheduling and queue management application designed to simplify bookings for customers and businesses.
+
+### Key Features
+- Appointment booking, cancellation, and rescheduling
+- Customer and business appointment management
+- QR-based appointment check-in
+- Reception-assisted check-in workflow
+- Availability and scheduling management
+- Customer-facing interface and backend API
+
+### Technology Stack
+- **Frontend:** React, TypeScript, Vite, Tailwind CSS
+- **Backend:** Python, FastAPI
+- **Database:** PostgreSQL
+- **Database management:** SQLAlchemy and Alembic
+
+### Local Development
+Run the frontend and backend using the setup instructions and environment configuration provided in this repository. Configure your own environment variables and API credentials before starting the application.
+
+### Project Status
+The project is under active development. Features should be tested in the local environment before being considered production-ready.
